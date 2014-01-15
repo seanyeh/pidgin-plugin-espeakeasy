@@ -54,6 +54,6 @@ sub receiving_im_msg_cb {
 
     $spoken = "$name says $msg";
 
-    system(("espeak","$spoken"));
+    system(("espeak \"$spoken\" --stdout | aplay"));
 }
 
