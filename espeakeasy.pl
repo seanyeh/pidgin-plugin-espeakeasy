@@ -5,10 +5,9 @@
 # Do whatever you want with it :)
 
 use Purple;
-use MIME::Base64;
 
 %PLUGIN_INFO = (
-    perl_api_version => 1,
+    perl_api_version => 2,
     name => "Espeakeasy",
     version => "0.1",
     summary => "Simple text-to-speech plugin using espeak",
@@ -29,7 +28,6 @@ sub plugin_load {
     $plugin = shift;
 
     Purple::Debug::info("espeakeasy", "plugin_load() - begin\n");
-
 
     # A pointer to the handle to which the signal belongs
     $convs_handle = Purple::Conversations::get_handle();
