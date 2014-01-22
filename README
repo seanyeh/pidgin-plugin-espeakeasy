@@ -1,0 +1,12 @@
+Minimal plugin for libpurple (pidgin, finch) to speak aloud all messages
+received (using espeak). Only tested on Linux, but should work on Mac OS X, and
+maybe Windows with some effort.
+
+Installation:
+    Download the perl script to your pidgin plugin directory (usually
+    ~/.purple/plugins)
+    See
+    https://developer.pidgin.im/wiki/Scripting%20and%20Plugins#HowdoIusePerlscriptswithPidginFinch
+
+Dependencies:
+    espeak (http://espeak.sourceforge.net/)
